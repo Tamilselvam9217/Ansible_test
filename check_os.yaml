@@ -2,7 +2,6 @@
 - name: Check OS dependencies
   hosts: all
   become: true
-  user: itsh
   gather_facts: true
   tasks:
     - name: Display OS version

@@ -2,7 +2,7 @@
 - name: Check OS dependencies
   hosts: all
   become: true
-  gather_facts: no
+  gather_facts: true
   tasks:
     - name: Display OS version
       ansible.builtin.debug:
